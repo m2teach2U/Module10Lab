@@ -29,10 +29,9 @@ def get_positive_integer_input(question_string):
 def powers_of_2(amount):
     """returns some number of powers of two"""
     # build the list of powers of 2
-    p_of_2 = []
-    for x in range(1, amount + 1):
-        p_of_2.append(2**x)
-    return p_of_2
+
+     return [2**x for x in range(1, amount + 1)]
+
 
 # loop until the user quits
 keep_playing = True
